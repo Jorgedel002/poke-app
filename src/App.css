@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+
+.pokemon-order{
+    font-weight: 800;
+    margin-right: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.pokemon-name{
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.author{
+    margin-left: 5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.poketitle{
+    text-decoration: solid 50px red;
+    color: #FFFB13;
+    margin-left: .4rem;
 }
 
-.App-link {
-  color: #61dafb;
+.stat-name{
+    font-weight: 500;
+    font-size: 1.1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.stat-base_stat{
+    margin-left: .4rem;
+    font-size: 1.1rem;
 }
+
+.type-container{
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    width: 50%;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.type{
+    padding: .2rem;
+    margin: 0;
+    color: black;
+}
+
+@media (min-width: 1113px) {
+    
+    .mobile-logo{
+        position: absolute;
+        left: 0;
+        margin-left: 1rem;
+        margin-top: .5rem;
+    }
+}
+
+@media (max-width: 473px){
+    .logo-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .author{
+        margin-left: 0;
+        margin-top: 1rem
+    }
+    
+    .poketitle{
+        margin: 0
+    }
+}
+
+.not-found{
+    margin-top: 25%;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
